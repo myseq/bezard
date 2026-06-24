@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>≡ƒìæ≡ƒ½ÉΓÿò</title>
+    <title>🍑🫐☕</title>
     <style>
         body {
             font-family: Verdana, Arial, sans-serif;
@@ -27,12 +27,12 @@
 <body>
 
     <div id="status">
-        Status: <span id="lock-state">≡ƒÆñ </span>
+        Status: <span id="lock-state">💤 </span>
     </div>
     <center><i>
     <b><p>Burning the candle at both ends</p></b>
     <p>or</p>
-    <p>Catching forty winks!!</p>
+    <p>Catching forty winks!!</p>    
     </i></center>
 
     <script>
@@ -41,13 +41,13 @@
         async function requestWakeLock() {
             try {
                 wakeLock = await navigator.wakeLock.request('screen');
-                document.title = "Γÿò";
-                document.getElementById('lock-state').textContent = "Active Γÿò (coffee)";
+                document.title = "☕";
+                document.getElementById('lock-state').textContent = "Active ☕ (coffee)";
                 document.getElementById('lock-state').className = "active";
-
+                
                 wakeLock.addEventListener('release', () => {
-                    document.title = "≡ƒÆñ";
-                    document.getElementById('lock-state').textContent = "Inactive ≡ƒÆñ (ZZZ)";
+                    document.title = "💤";
+                    document.getElementById('lock-state').textContent = "Inactive 💤 (ZZZ)";
                     document.getElementById('lock-state').className = "";
                 });
             } catch (err) {
@@ -67,4 +67,3 @@
     </script>
 </body>
 </html>
-
